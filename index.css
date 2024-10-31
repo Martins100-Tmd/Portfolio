@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.mg {
+   transform: rotateY(180deg);
+}
+
+.tag {
+   color: #00623e;
+}
