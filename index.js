@@ -17,5 +17,5 @@ var typed = new Typed('#job', {
 const swiper = new Swiper('.swiper', {
    direction: 'horizontal',
    loop: true,
-   slidesPerView: 'auto', // Ensures each
+   slidesPerView: 'auto', // Ensures
 });
