@@ -4,7 +4,6 @@
 <head>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rajdhani&family=Orbitron" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./output.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,7 +11,7 @@
 </head>
 
 <body class="bg-[#000]">
-    <header class="w-full p-3 bg-[#0d0d0d] border-b border-[#4a4a4a]">
+    <header class="w-full p-3 bg-[#0d0d0d] border-b border-[#343434]">
         <nav class="flex flex-row items-center justify-between gap-6">
             <div class="flex flex-row items-center w-1/4 sm:w-1/5 md:w-1/4 self-center">
                 <img src="./MW.png" class="object-cover inline-flex w-[60px] sm:w-[70px] lg:w-[80px] mg" />
@@ -26,20 +25,28 @@
             </div>
             <ul class="w-auto hidden sm:flex flex-row items-center gap-3 md:gap-5 justify-between self-center"
                 id="menulist">
-                <li onclick="updateListCursor(event);"
-                    class="cursor-pointer font-medium text-sm lg:text-lg font-orb text-white">Home</li>
-                <li onclick="updateListCursor(event);"
-                    class="cursor-pointer font-medium text-sm lg:text-lg font-orb text-white">
-                    Portfolio
-                </li>
-                <li onclick="updateListCursor(event);"
-                    class="cursor-pointer font-medium text-sm lg:text-lg font-orb text-white">
-                    About me
-                </li>
-                <li onclick="updateListCursor(event);"
-                    class="cursor-pointer font-medium text-sm lg:text-lg font-orb text-white">
-                    Contact me
-                </li>
+                <a href='Index.html'>
+                    <li onclick="updateListCursor(event);" id='Index'
+                        class="cursor-pointer font-medium text-sm lg:text-lg font-orb text-white">Home</li>
+                </a>
+                <a href='#'>
+                    <li onclick="updateListCursor(event);" id='portfolio'
+                        class="cursor-pointer font-medium text-sm lg:text-lg font-orb text-white">
+                        Portfolio
+                    </li>
+                </a>
+                <a href='./about.html'>
+                    <li onclick="updateListCursor(event);" id='about'
+                        class="cursor-pointer font-medium text-sm lg:text-lg font-orb text-white">
+                        About me
+                    </li>
+                </a>
+                <a href='#'>
+                    <li onclick="updateListCursor(event);" id='contact'
+                        class="cursor-pointer font-medium text-sm lg:text-lg font-orb text-white">
+                        Contact me
+                    </li>
+                </a>
             </ul>
             <div class="w-1/5 md:w-1/4 hidden sm:flex justify-end self-center">
                 <button
@@ -52,9 +59,8 @@
     </header>
     <section class='w-full grid grid-cols-1 md:grid-cols-2 md:gap-7 gap-3 p-2 sm:py-7 md:px-12'>
         <div
-            class='flex flex-col items-center w-full p-7 group hover:bg-[#d4d4d4] bg-[#0d0d0d] border border-[#555555] rounded-3xl'>
+            class='flex flex-col items-center w-full p-7 group hover:bg-[#d4d4d4] bg-[#0d0d0d] border border-[#1c1c1c] rounded-3xl'>
             <div class='flex flex-col sm:flex-row gap-2'>
-
                 <img src='./MM.png'
                     class='object-cover w-full md:w-[80%] self-start rounded-tl-3xl rounded-br-3xl -mt-[15%]' />
                 <div class='w-full self-start flex flex-col items-center sm:items-start justify-between'>
@@ -83,21 +89,21 @@
             </div>
         </div>
         <div class='flex flex-col w-full gap-5'>
-            <div class='w-full p-3 bg-[#0d0d0d] border border-[#4a4a4a] rounded-3xl swiper'>
-                <div class="grid grid-cols-4 items-center headline">
-                    <img src='./Css.png' class='object-cover w-[50px] md:w-[80px]' />
-                    <img src='./Html.png' class='object-cover w-[50px] md:w-[80px]' />
-                    <img src='./JS.png' class='object-cover w-[50px] md:w-[80px]' />
-                    <img src='./Nodejs.png ' class='object-cover w-[50px] md:w-[80px]' />
-                    <img src='./Postgres.png' class='object-cover w-[50px] md:w-[80px]' />
-                    <img src='./Prisma.png' class='object-cover w-[50px] md:w-[80px]' />
-                    <img src='./Python.png' class='object-cover w-[50px] md:w-[80px]' />
-                    <img src='./React.png' class='object-cover w-[50px] md:w-[80px]' />
+            <div class='w-full p-3 bg-[#0d0d0d] border border-[#1c1c1c] rounded-3xl self-stretch'>
+                <div class="grid grid-cols-4 items-center">
+                    <img src='./Css.png' class='object-cover w-[50px] md:w-[70px]' />
+                    <img src='./Html.png' class='object-cover w-[50px] md:w-[70px]' />
+                    <img src='./JS.png' class='object-cover w-[50px] md:w-[70px]' />
+                    <img src='./Nodejs.png ' class='object-cover w-[50px] md:w-[70px]' />
+                    <img src='./Postgres.png' class='object-cover w-[50px] md:w-[70px]' />
+                    <img src='./Prisma.png' class='object-cover w-[50px] md:w-[70px]' />
+                    <img src='./Python.png' class='object-cover w-[50px] md:w-[70px]' />
+                    <img src='./React.png' class='object-cover w-[50px] md:w-[70px]' />
                 </div>
             </div>
-            <div class='grid grid-cols-1 md:grid-cols-2 w-full gap-3'>
+            <div class='grid grid-cols-1 md:grid-cols-2 w-full gap-3 self-stretch'>
                 <div
-                    class='w-full flex gap-2 flex-col group items-center duration-500 hover:bg-[#d4d4d4] p-3 bg-[#0d0d0d] border border-[#4a4a4a] rounded-3xl'>
+                    class='w-full flex md:gap-12 gap-2 flex-col group items-center duration-500 hover:bg-[#d4d4d4] p-3 bg-[#0d0d0d] border border-[#1c1c1c] rounded-3xl'>
                     <img src='kite.png' class='w-[60px] group-hover:hidden flex md:w-[50px] object-cover' />
                     <img src='kiteb.png' class='w-[60px] hidden group-hover:flex md:w-[50px] object-cover' />
                     <div class='flex flex-row items-center w-full justify-between'>
@@ -107,31 +113,32 @@
                             <p class='text-xl text-white group-hover:text-black text-start font-orb font-black'>
                                 Portfolio</p>
                         </div>
-                        <img src='saturn.png' class='object-cover group-hover:hidden flex md:w-[50px] w-[50px]' />
-                        <img src='saturnb.png' class='object-cover group-hover:flex hidden md:w-[50px] w-[50px]' />
+                        <img src='saturn.png' class='object-cover group-hover:hidden flex md:w-[40px] w-[30px]' />
+                        <img src='saturnb.png' class='object-cover group-hover:flex hidden md:w-[40px] w-[30px]' />
                     </div>
+
                 </div>
-                <div
-                    class='w-full flex gap-2 group flex-col items-center p-3 bg-[#0d0d0d] hover:bg-[#d4d4d4] duration-500 justify-between border border-[#4a4a4a] rounded-3xl'>
+                <div onclick="reLocate('about.html')" class='w-full flex md:gap-12 gap-2 group flex-col items-center p-3 bg-[#0d0d0d] hover:bg-[#d4d4d4]
+                duration-500 justify-between border border-[#1c1c1c] rounded-3xl'>
                     <img src='kite.png' class='w-[60px] group-hover:hidden md:w-[50px] object-cover' />
                     <img src='kiteb.png' class='w-[60px] md:w-[50px] hidden group-hover:flex object-cover' />
-                    <div? class='flex flex-row items-center w-full justify-between'>
+                    <div class='flex flex-row items-center w-full justify-between'>
                         <div class='flex flex-col items-start'>
                             <p class='text-sm text-white group-hover:text-black text-opacity-75 text-start font-orb'>
                                 About me</p>
                             <p class='text-xl text-white group-hover:text-black text-start font-orb font-black'>Self
                                 Summary</p>
                         </div>
-                        <img src='saturn.png' class='object-cover group-hover:hidden flex md:w-[50px] w-[50px]' />
-                        <img src='saturnb.png' class='object-cover group-hover:flex hidden md:w-[50px] w-[50px]' />
+                        <img src='saturn.png' class='object-cover group-hover:hidden flex md:w-[40px] w-[30px]' />
+                        <img src='saturnb.png' class='object-cover group-hover:flex hidden md:w-[40px] w-[30px]' />
+                    </div>
                 </div>
             </div>
         </div>
-        </div>
     </section>
-    <section class='w-full grid grid-cols-2 md:grid-cols-4 md:gap-7 gap-3 p-2 sm:py-7 md:px-12 '>
+    <section class='w-full grid grid-cols-2 md:grid-cols-4 md:gap-7 gap-3 p-2 md:py-2 md:px-12'>
         <a href='CV.pdf' download='CV.pdf'
-            class='w-full flex gap-2 group flex-col items-center p-3 bg-[#0d0d0d] hover:bg-[#d4d4d4] duration-500 justify-between border border-[#4a4a4a] rounded-3xl'>
+            class='w-full flex gap-2 group flex-col items-center p-3 bg-[#0d0d0d] hover:bg-[#d4d4d4] duration-500 justify-between border border-[#1c1c1c] rounded-3xl'>
             <img src='fileW.png' class='w-[40px] group-hover:hidden md:w-[50px] object-cover' />
             <img src='fileB.png' class='w-[40px] md:w-[50px] hidden group-hover:flex object-cover' />
             <div class='flex flex-row items-center w-full justify-between'>
@@ -139,51 +146,54 @@
                     <p
                         class='text-[11px] md:text-sm text-white group-hover:text-black text-opacity-75 text-start font-orb'>
                         Download</p>
-                    <p class='text-sm md:text-lg text-white group-hover:text-black text-start font-orb font-black'>Self
+                    <p class='text-sm md:text-lg text-white group-hover:text-black text-start font-orb font-black'>
                         My Resume</p>
                 </div>
-                <img src='saturn.png' class='object-cover group-hover:hidden flex md:w-[50px] w-[30px]' />
-                <img src='saturnb.png' class='object-cover group-hover:flex hidden md:w-[50px] w-[30px]' />
+                <img src='saturn.png' class='object-cover group-hover:hidden flex md:w-[40px] w-[30px]' />
+                <img src='saturnb.png' class='object-cover group-hover:flex hidden md:w-[40px] w-[30px]' />
             </div>
         </a>
-        <a href='https://x.com/MartinsOlumide8'
-            class='w-full flex gap-2 group flex-col items-center p-3 bg-[#0d0d0d] hover:bg-[#d4d4d4] duration-500 justify-between border border-[#4a4a4a] rounded-3xl'>
-            <img src='twitterW.png' class='w-[40px] group-hover:hidden md:w-[50px] object-cover' />
-            <img src='twitterB.png' class='w-[40px] md:w-[50px] hidden group-hover:flex object-cover' />
-            <div class='flex flex-row items-center w-full justify-between'>
-                <div class='flex flex-col items-start'>
-                    <p
-                        class='text-[11px] md:text-sm text-white group-hover:text-black text-opacity-75 text-start font-orb'>
-                        Twitter handle
-                    </p>
-                    <p
-                        class='text-sm md:text-lg text-emerald-800 group-hover:text-black text-start font-orb font-black'>
-                        Follow me on Elon X</p>
+        <div
+            class='w-full grid grid-cols-2 col-span-2 border bg-[#0d0d0d] border-[#1c1c1c] gap-2.5 md:p-6 p-2 rounded-3xl'>
+            <a href='https://x.com/MartinsOlumide8'
+                class='w-full flex gap-2 group flex-col items-center p-3 bg-[#0d0d0d] hover:bg-[#d4d4d4] duration-500 justify-between border border-[#1c1c1c] rounded-3xl'>
+                <img src='twitterW.png' class='w-[40px] group-hover:hidden md:w-[50px] object-cover' />
+                <img src='twitterB.png' class='w-[40px] md:w-[50px] hidden group-hover:flex object-cover' />
+                <div class='flex flex-row items-center w-full justify-between'>
+                    <div class='flex flex-col items-start'>
+                        <p
+                            class='text-[11px] md:text-sm text-white group-hover:text-black text-opacity-75 text-start font-orb'>
+                            Twitter handle
+                        </p>
+                        <p
+                            class='text-sm md:text-lg text-emerald-800 group-hover:text-black text-start font-orb font-black'>
+                            Follow me on Elon X</p>
+                    </div>
+                    <img src='saturn.png' class='object-cover group-hover:hidden flex md:w-[40px] w-[30px]' />
+                    <img src='saturnb.png' class='object-cover group-hover:flex hidden md:w-[40px] w-[30px]' />
                 </div>
-                <img src='saturn.png' class='object-cover group-hover:hidden flex md:w-[50px] w-[30px]' />
-                <img src='saturnb.png' class='object-cover group-hover:flex hidden md:w-[50px] w-[30px]' />
-            </div>
-        </a>
-        <a href='https://github.com/Martins100-Tmd'
-            class='w-full flex gap-2 group flex-col items-center p-3 bg-[#0d0d0d] hover:bg-[#d4d4d4] duration-500 justify-between border border-[#4a4a4a] rounded-3xl'>
-            <img src='githubW.png' class='w-[40px] group-hover:hidden md:w-[50px] object-cover' />
-            <img src='githubB.png' class='w-[40px] md:w-[50px] hidden group-hover:flex object-cover' />
-            <div class='flex flex-row items-center w-full justify-between'>
-                <div class='flex flex-col items-start'>
-                    <p
-                        class='text-[11px] md:text-sm text-white group-hover:text-black text-opacity-75 text-start font-orb'>
-                        Github
-                    </p>
-                    <p class='text-sm sm:text-xl text-white group-hover:text-black text-start font-orb font-black'>
-                        Martins100-Tmd
-                    </p>
+            </a>
+            <a href='https://github.com/Martins100-Tmd'
+                class='w-full flex gap-2 group flex-col items-center p-3 bg-[#0d0d0d] hover:bg-[#d4d4d4] duration-500 justify-between border border-[#1c1c1c] rounded-3xl'>
+                <img src='githubW.png' class='w-[40px] group-hover:hidden md:w-[50px] object-cover' />
+                <img src='githubB.png' class='w-[40px] md:w-[50px] hidden group-hover:flex object-cover' />
+                <div class='flex flex-row items-center w-full justify-between'>
+                    <div class='flex flex-col items-start'>
+                        <p
+                            class='text-[11px] md:text-sm text-white group-hover:text-black text-opacity-75 text-start font-orb'>
+                            Github
+                        </p>
+                        <p class='text-sm sm:text-lg text-white group-hover:text-black text-start font-orb font-black'>
+                            Martins100-Tmd
+                        </p>
+                    </div>
+                    <img src='saturn.png' class='object-cover group-hover:hidden flex md:w-[40px] w-[30px]' />
+                    <img src='saturnb.png' class='object-cover group-hover:flex hidden md:w-[40px] w-[30px]' />
                 </div>
-                <img src='saturn.png' class='object-cover group-hover:hidden flex md:w-[50px] w-[30px]' />
-                <img src='saturnb.png' class='object-cover group-hover:flex hidden md:w-[50px] w-[30px]' />
-            </div>
-        </a>
+            </a>
+        </div>
         <a href='https://wa.me/09061322407'
-            class='w-full flex gap-2 group flex-col items-center p-3 bg-[#0d0d0d] hover:bg-[#d4d4d4] duration-500 justify-between border border-[#4a4a4a] rounded-3xl'>
+            class='w-full flex gap-2 group flex-col items-center p-3 bg-[#0d0d0d] hover:bg-[#d4d4d4] duration-500 justify-between border border-[#1c1c1c] rounded-3xl'>
             <div class='rounded-3xl border-2 border-[#4a4a4a] p-2.5 flex justify-center w-3/4 mx-auto'>
                 <img src='whatsappW.png' class='w-[40px] group-hover:hidden md:w-[50px] object-cover' />
                 <img src='whatsappB.png' class='w-[40px] md:w-[50px] hidden group-hover:flex object-cover' />
@@ -200,13 +210,12 @@
                         up
                     </p>
                 </div>
-                <img src='saturn.png' class='object-cover group-hover:hidden flex md:w-[50px] w-[30px]' />
-                <img src='saturnb.png' class='object-cover group-hover:flex hidden md:w-[50px] w-[30px]' />
+                <img src='saturn.png' class='object-cover group-hover:hidden flex md:w-[40px] w-[30px]' />
+                <img src='saturnb.png' class='object-cover group-hover:flex hidden md:w-[40px] w-[30px]' />
             </div>
         </a>
     </section>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./index.js"></script>
 </body>
 

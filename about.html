@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rajdhani&family=Orbitron" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" href="./output.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body class="bg-[#000]">
+    <header class="w-full p-3 bg-[#0d0d0d] border-b border-[#343434]">
+        <nav class="flex flex-row items-center justify-between gap-6">
+            <div class="flex flex-row items-center w-1/4 sm:w-1/5 md:w-1/4 self-center">
+                <img src="./MW.png" class="object-cover inline-flex w-[60px] sm:w-[70px] lg:w-[80px] mg" />
+                <div class="flex flex-col items-start self-start">
+                    <p
+                        class="font-orb font-medium text-base sm:text-xl lg:text-2xl text-start text-white self-start mt-1">
+                        artins</p>
+                    <p class="font-orb font-medium text-base sm:text-xl lg:text-2xl text-start text-white self-start">
+                        Olumide</p>
+                </div>
+            </div>
+            <ul class="w-auto hidden sm:flex flex-row items-center gap-3 md:gap-5 justify-between self-center"
+                id="menulist">
+                <a href='./Index.html'>
+                    <li onclick="updateListCursor(event);" id='Index'
+                        class="cursor-pointer font-medium text-sm lg:text-lg font-orb text-white">Home</li>
+                </a>
+
+                <li onclick="updateListCursor(event);" id='portfolio'
+                    class="cursor-pointer font-medium text-sm lg:text-lg font-orb text-white">
+                    Portfolio
+                </li>
+                <a href='./about.html'>
+                    <li onclick="updateListCursor(event);" id='about'
+                        class="cursor-pointer font-medium text-sm lg:text-lg font-orb text-white">
+                        About me
+                    </li>
+                </a>
+                <li onclick="updateListCursor(event);" id='contact'
+                    class="cursor-pointer font-medium text-sm lg:text-lg font-orb text-white">
+                    Contact me
+                </li>
+            </ul>
+            <div class="w-1/5 md:w-1/4 hidden sm:flex justify-end self-center">
+                <button
+                    class="sm:px-5 sm:py-2.5 py-2 rounded-lg shadow text-xs lg:text-lg font-orb text-white bg-emerald-800 w-4/5 md:w-1/2">
+                    Say Hi
+                </button>
+            </div>
+            <i class="material-icons sm:hidden flex text-4xl text-white">menu</i>
+        </nav>
+    </header>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>
