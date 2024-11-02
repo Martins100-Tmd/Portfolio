@@ -5,7 +5,7 @@ module.exports = {
       extend: {
          fontFamily: {
             orb: ['Orbitron'],
-            raj: ['Rajdhani'],
+            ice: ['Iceland'],
          },
       },
    },

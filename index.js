@@ -20,13 +20,11 @@ function reLocate(path) {
    window.location.pathname = path;
 }
 
-var typed = new Typed('#job', {
-   strings: ["I'm a Frontend Developer", "I'm a Backend developer", "I'm a fullstack Developer"],
-   typeSpeed: 100,
-});
+function socialLinks(url) {
+   window.location.href = url;
+}
 
-const swiper = new Swiper('.swiper', {
-   direction: 'horizontal',
-   loop: true,
-   slidesPerView: 'auto',
+new Typed('#job', {
+   strings: ['I am a Frontend Developer', 'I am also a Backend developer', 'I am basically a Fullstack Developer'],
+   typeSpeed: 100,
 });

@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rajdhani&family=Orbitron" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Iceland&family=Orbitron" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
     <link rel="stylesheet" href="./output.css" />
     <meta charset="UTF-8" />
@@ -16,211 +16,208 @@
             <div class="flex flex-row items-center w-1/4 sm:w-1/5 md:w-1/4 self-center">
                 <img src="./MW.png" class="object-cover inline-flex w-[60px] sm:w-[70px] lg:w-[80px] mg" />
                 <div class="flex flex-col items-start self-start">
-                    <p
-                        class="font-orb font-medium text-base sm:text-xl lg:text-2xl text-start text-white self-start mt-1">
+                    <p class="font-ice font-medium text-lg sm:text-2xl lg:text-2xl text-start text-white self-start">
                         artins</p>
-                    <p class="font-orb font-medium text-base sm:text-xl lg:text-2xl text-start text-white self-start">
+                    <p class="font-ice font-medium text-lg sm:text-2xl lg:text-2xl text-start text-white self-start">
                         Olumide</p>
                 </div>
             </div>
             <ul class="w-auto hidden sm:flex flex-row items-center gap-3 md:gap-5 justify-between self-center"
                 id="menulist">
-                <a href='Index.html'>
-                    <li onclick="updateListCursor(event);" id='Index'
-                        class="cursor-pointer font-medium text-sm lg:text-lg font-orb text-white">Home</li>
-                </a>
-                <a href='#'>
-                    <li onclick="updateListCursor(event);" id='portfolio'
-                        class="cursor-pointer font-medium text-sm lg:text-lg font-orb text-white">
-                        Portfolio
-                    </li>
-                </a>
-                <a href='./about.html'>
-                    <li onclick="updateListCursor(event);" id='about'
-                        class="cursor-pointer font-medium text-sm lg:text-lg font-orb text-white">
-                        About me
-                    </li>
-                </a>
-                <a href='#'>
-                    <li onclick="updateListCursor(event);" id='contact'
-                        class="cursor-pointer font-medium text-sm lg:text-lg font-orb text-white">
-                        Contact me
-                    </li>
-                </a>
+                <li onclick="updateListCursor(event),reLocate('Index.html');" id="Index"
+                    class="cursor-pointer font-medium text-xl lg:text-2xl font-ice text-white">
+                    Home
+                </li>
+                <li onclick="updateListCursor(event),reLocate('portfolio.html');" id="portfolio"
+                    class="cursor-pointer font-medium text-xl lg:text-2xl font-ice text-white">
+                    Portfolio
+                </li>
+                <li onclick="updateListCursor(event),reLocate('about.html');" id="about"
+                    class="cursor-pointer font-medium text-xl lg:text-2xl font-ice text-white">
+                    About me
+                </li>
+                <li onclick="updateListCursor(event),reLocate('contact.html');" id="contact"
+                    class="cursor-pointer font-medium text-xl lg:text-2xl font-ice text-white">
+                    Contact me
+                </li>
             </ul>
             <div class="w-1/5 md:w-1/4 hidden sm:flex justify-end self-center">
                 <button
-                    class="sm:px-5 sm:py-2.5 py-2 rounded-lg shadow text-xs lg:text-lg font-orb text-white bg-emerald-800 w-4/5 md:w-1/2">
+                    class="sm:px-5 sm:py-2.5 py-2 rounded-lg shadow text-base lg:text-lg font-ice font-bold bg-emerald-400 w-4/5 md:w-1/2">
                     Say Hi
                 </button>
             </div>
             <i class="material-icons sm:hidden flex text-4xl text-white">menu</i>
         </nav>
     </header>
-    <section class='w-full grid grid-cols-1 md:grid-cols-2 md:gap-7 gap-3 p-2 sm:py-7 md:px-12'>
+    <section class="w-full grid grid-cols-1 md:grid-cols-2 md:gap-7 gap-3 p-2 sm:py-7 md:px-12">
         <div
-            class='flex flex-col items-center w-full p-7 group hover:bg-[#d4d4d4] bg-[#0d0d0d] border border-[#1c1c1c] rounded-3xl'>
-            <div class='flex flex-col sm:flex-row gap-2'>
-                <img src='./MM.png'
-                    class='object-cover w-full md:w-[80%] self-start rounded-tl-3xl rounded-br-3xl -mt-[15%]' />
-                <div class='w-full self-start flex flex-col items-center sm:items-start justify-between'>
-                    <div class='flex flex-col items-center md:items-start gap-1.5'>
+            class="flex flex-col items-center w-full p-7 group hover:bg-[#fff] bg-[#0d0d0d] border border-[#1c1c1c] rounded-3xl">
+            <div class="flex flex-col sm:flex-row gap-2">
+                <img src="./MM.png"
+                    class="object-cover w-full md:w-[80%] self-start rounded-tl-3xl rounded-br-3xl -mt-[15%]" />
+                <div class="w-full self-start flex flex-col items-center sm:items-start justify-between">
+                    <div class="flex flex-col items-center md:items-start gap-1.5">
                         <p
-                            class='font-orb text-base group-hover:text-black text-white text-opacity-70 text-center md:text-start w-full sm:w-auto'>
+                            class="font-ice text-lg md:text-xl group-hover:text-black text-white text-opacity-70 text-center md:text-start w-full sm:w-auto">
                             Hey, my name is
                         </p>
-                        <p class='font-orb text-2xl font-semibold text-white group-hover:text-black sm:w-auto w-full'>
+                        <p
+                            class="font-ice text-3xl md:text-4xl font-semibold text-white group-hover:text-black sm:w-auto w-full">
                             Martins Olumide</p>
-                        <p class='font-orb group-hover:text-black text-base text-white text-opacity-70 text-center md:text-start w-full sm:w-auto'
-                            id='job'></p>
+                        <div class='w-full flex justify-center'>
+                            <p class="font-ice group-hover:text-black text-lg md:text-xl text-white text-opacity-70 text-center md:text-start w-full sm:w-auto"
+                                id="job"></p>
+                        </div>
                     </div>
-                    <div class='w-full flex justify-end mt-2'>
-                        <img src='saturn.png' class='object-cover group-hover:hidden flex w-[17%]' />
-                        <img src='saturnb.png' class='object-cover group-hover:flex hidden w-[17%]' />
+                    <div class="w-full flex justify-end mt-2">
+                        <img src="saturn.png" class="object-cover group-hover:hidden flex w-[15%]" />
+                        <img src="saturnb.png" class="object-cover group-hover:flex hidden w-[15%]" />
                     </div>
                 </div>
             </div>
-            <div class='w-full items-start gap-2'>
-                <p class='font-orb text-xl font-semibold group-hover:text-black text-white'>How many programmers
-                    does it take to change a light bulb?
+            <div class="w-full items-start gap-2">
+                <p class="font-ice text-xl md:text-2xl font-semibold group-hover:text-black text-white">
+                    How many programmers does it take to change a light bulb?
                 </p>
-                <i class='font-orb text-sm text-start group-hover:text-black text-white'>None. That's a hardware
+                <i class="font-ice text-base md:text-lg text-start group-hover:text-black text-white">None. That's a
+                    hardware
                     problem!</i>
             </div>
         </div>
-        <div class='flex flex-col w-full gap-5'>
-            <div class='w-full p-3 bg-[#0d0d0d] border border-[#1c1c1c] rounded-3xl self-stretch'>
+        <div class="flex flex-col w-full gap-5">
+            <div class="w-full p-3 bg-[#0d0d0d] border border-[#1c1c1c] rounded-3xl self-stretch">
                 <div class="grid grid-cols-4 items-center">
-                    <img src='./Css.png' class='object-cover w-[50px] md:w-[70px]' />
-                    <img src='./Html.png' class='object-cover w-[50px] md:w-[70px]' />
-                    <img src='./JS.png' class='object-cover w-[50px] md:w-[70px]' />
-                    <img src='./Nodejs.png ' class='object-cover w-[50px] md:w-[70px]' />
-                    <img src='./Postgres.png' class='object-cover w-[50px] md:w-[70px]' />
-                    <img src='./Prisma.png' class='object-cover w-[50px] md:w-[70px]' />
-                    <img src='./Python.png' class='object-cover w-[50px] md:w-[70px]' />
-                    <img src='./React.png' class='object-cover w-[50px] md:w-[70px]' />
+                    <img src="./Css.png" class="object-cover w-[50px] md:w-[70px]" />
+                    <img src="./Html.png" class="object-cover w-[50px] md:w-[70px]" />
+                    <img src="./JS.png" class="object-cover w-[50px] md:w-[70px]" />
+                    <img src="./Nodejs.png " class="object-cover w-[50px] md:w-[70px]" />
+                    <img src="./Postgres.png" class="object-cover w-[50px] md:w-[70px]" />
+                    <img src="./Prisma.png" class="object-cover w-[50px] md:w-[70px]" />
+                    <img src="./Python.png" class="object-cover w-[50px] md:w-[70px]" />
+                    <img src="./React.png" class="object-cover w-[50px] md:w-[70px]" />
                 </div>
             </div>
-            <div class='grid grid-cols-1 md:grid-cols-2 w-full gap-3 self-stretch'>
+            <div class="grid grid-cols-1 md:grid-cols-2 w-full gap-3 self-stretch">
                 <div
-                    class='w-full flex md:gap-12 gap-2 flex-col group items-center duration-500 hover:bg-[#d4d4d4] p-3 bg-[#0d0d0d] border border-[#1c1c1c] rounded-3xl'>
-                    <img src='kite.png' class='w-[60px] group-hover:hidden flex md:w-[50px] object-cover' />
-                    <img src='kiteb.png' class='w-[60px] hidden group-hover:flex md:w-[50px] object-cover' />
-                    <div class='flex flex-row items-center w-full justify-between'>
-                        <div class='flex flex-col items-start'>
-                            <p class='text-sm text-white group-hover:text-black text-opacity-75 text-start font-orb'>
+                    class="w-full flex md:gap-12 gap-2 flex-col group items-center duration-500 hover:bg-[#fff] p-3 bg-[#0d0d0d] border border-[#1c1c1c] rounded-3xl">
+                    <img src="kite.png" class="w-[60px] group-hover:hidden flex md:w-[50px] object-cover" />
+                    <img src="kiteb.png" class="w-[60px] hidden group-hover:flex md:w-[50px] object-cover" />
+                    <div class="flex flex-row items-center w-full justify-between">
+                        <div class="flex flex-col items-start">
+                            <p
+                                class="text-[13px] md:text-lg text-white group-hover:text-black text-opacity-75 text-start font-ice">
                                 Showcase</p>
-                            <p class='text-xl text-white group-hover:text-black text-start font-orb font-black'>
+                            <p
+                                class="text-lg md:text-2xl text-white group-hover:text-black text-start font-ice font-black">
                                 Portfolio</p>
                         </div>
-                        <img src='saturn.png' class='object-cover group-hover:hidden flex md:w-[40px] w-[30px]' />
-                        <img src='saturnb.png' class='object-cover group-hover:flex hidden md:w-[40px] w-[30px]' />
+                        <img src="saturn.png" class="object-cover group-hover:hidden flex md:w-[40px] w-[30px]" />
+                        <img src="saturnb.png" class="object-cover group-hover:flex hidden md:w-[40px] w-[30px]" />
                     </div>
-
                 </div>
-                <div onclick="reLocate('about.html')" class='w-full flex md:gap-12 gap-2 group flex-col items-center p-3 bg-[#0d0d0d] hover:bg-[#d4d4d4]
-                duration-500 justify-between border border-[#1c1c1c] rounded-3xl'>
-                    <img src='kite.png' class='w-[60px] group-hover:hidden md:w-[50px] object-cover' />
-                    <img src='kiteb.png' class='w-[60px] md:w-[50px] hidden group-hover:flex object-cover' />
-                    <div class='flex flex-row items-center w-full justify-between'>
-                        <div class='flex flex-col items-start'>
-                            <p class='text-sm text-white group-hover:text-black text-opacity-75 text-start font-orb'>
+                <div onclick="reLocate('about.html')"
+                    class="w-full flex md:gap-12 gap-2 group flex-col items-center p-3 bg-[#0d0d0d] hover:bg-[#fff] duration-500 justify-between border border-[#1c1c1c] rounded-3xl">
+                    <img src="kite.png" class="w-[60px] group-hover:hidden md:w-[50px] object-cover" />
+                    <img src="kiteb.png" class="w-[60px] md:w-[50px] hidden group-hover:flex object-cover" />
+                    <div class="flex flex-row items-center w-full justify-between">
+                        <div class="flex flex-col items-start">
+                            <p
+                                class="text-[13px] md:text-lg text-white group-hover:text-black text-opacity-75 text-start font-ice">
                                 About me</p>
-                            <p class='text-xl text-white group-hover:text-black text-start font-orb font-black'>Self
+                            <p
+                                class="text-lg md:text-2xl text-white group-hover:text-black text-start font-ice font-black">
+                                Self
                                 Summary</p>
                         </div>
-                        <img src='saturn.png' class='object-cover group-hover:hidden flex md:w-[40px] w-[30px]' />
-                        <img src='saturnb.png' class='object-cover group-hover:flex hidden md:w-[40px] w-[30px]' />
+                        <img src="saturn.png" class="object-cover group-hover:hidden flex md:w-[40px] w-[30px]" />
+                        <img src="saturnb.png" class="object-cover group-hover:flex hidden md:w-[40px] w-[30px]" />
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class='w-full grid grid-cols-2 md:grid-cols-4 md:gap-7 gap-3 p-2 md:py-2 md:px-12'>
-        <a href='CV.pdf' download='CV.pdf'
-            class='w-full flex gap-2 group flex-col items-center p-3 bg-[#0d0d0d] hover:bg-[#d4d4d4] duration-500 justify-between border border-[#1c1c1c] rounded-3xl'>
-            <img src='fileW.png' class='w-[40px] group-hover:hidden md:w-[50px] object-cover' />
-            <img src='fileB.png' class='w-[40px] md:w-[50px] hidden group-hover:flex object-cover' />
-            <div class='flex flex-row items-center w-full justify-between'>
-                <div class='flex flex-col items-start'>
+    <section class="w-full grid grid-cols-2 md:grid-cols-4 md:gap-7 gap-3 p-2 md:py-2 md:px-12">
+        <a href="CV.pdf" download="CV.pdf"
+            class="w-full flex gap-2 group flex-col items-center p-3 bg-[#0d0d0d] hover:bg-[#fff] duration-500 justify-between border border-[#1c1c1c] rounded-3xl">
+            <img src="fileW.png" class="w-[40px] group-hover:hidden md:w-[50px] object-cover" />
+            <img src="fileB.png" class="w-[40px] md:w-[50px] hidden group-hover:flex object-cover" />
+            <div class="flex flex-row items-center w-full justify-between">
+                <div class="flex flex-col items-start">
                     <p
-                        class='text-[11px] md:text-sm text-white group-hover:text-black text-opacity-75 text-start font-orb'>
+                        class="text-[13px] md:text-lg text-white group-hover:text-black text-opacity-75 text-start font-ice">
                         Download</p>
-                    <p class='text-sm md:text-lg text-white group-hover:text-black text-start font-orb font-black'>
-                        My Resume</p>
+                    <p class="text-sm md:text-lg text-white group-hover:text-black text-start font-ice font-black">My
+                        Resume</p>
                 </div>
-                <img src='saturn.png' class='object-cover group-hover:hidden flex md:w-[40px] w-[30px]' />
-                <img src='saturnb.png' class='object-cover group-hover:flex hidden md:w-[40px] w-[30px]' />
+                <img src="saturn.png" class="object-cover group-hover:hidden flex md:w-[40px] w-[30px]" />
+                <img src="saturnb.png" class="object-cover group-hover:flex hidden md:w-[40px] w-[30px]" />
             </div>
         </a>
         <div
-            class='w-full grid grid-cols-2 col-span-2 border bg-[#0d0d0d] border-[#1c1c1c] gap-2.5 md:p-6 p-2 rounded-3xl'>
-            <a href='https://x.com/MartinsOlumide8'
-                class='w-full flex gap-2 group flex-col items-center p-3 bg-[#0d0d0d] hover:bg-[#d4d4d4] duration-500 justify-between border border-[#1c1c1c] rounded-3xl'>
-                <img src='twitterW.png' class='w-[40px] group-hover:hidden md:w-[50px] object-cover' />
-                <img src='twitterB.png' class='w-[40px] md:w-[50px] hidden group-hover:flex object-cover' />
-                <div class='flex flex-row items-center w-full justify-between'>
-                    <div class='flex flex-col items-start'>
+            class="w-full grid grid-cols-2 col-span-2 border bg-[#0d0d0d] border-[#1c1c1c] gap-2.5 md:p-6 p-2 rounded-3xl">
+            <div onclick="socialLinks(`https://x.com/MartinsOlumide8`)"
+                class="w-full flex gap-2 group flex-col items-center p-3 bg-[#0d0d0d] hover:bg-[#fff] duration-500 justify-between border border-[#1c1c1c] rounded-3xl">
+                <img src="twitterW.png" class="w-[40px] group-hover:hidden md:w-[50px] object-cover" />
+                <img src="twitterB.png" class="w-[40px] md:w-[50px] hidden group-hover:flex object-cover" />
+                <div class="flex flex-row items-center w-full justify-between">
+                    <div class="flex flex-col items-start">
                         <p
-                            class='text-[11px] md:text-sm text-white group-hover:text-black text-opacity-75 text-start font-orb'>
+                            class="text-[13px] md:text-lg text-white group-hover:text-black text-opacity-75 text-start font-ice">
                             Twitter handle
                         </p>
                         <p
-                            class='text-sm md:text-lg text-emerald-800 group-hover:text-black text-start font-orb font-black'>
-                            Follow me on Elon X</p>
+                            class="text-sm md:text-lg text-emerald-400 group-hover:text-black text-start font-ice font-black">
+                            Follow me on Elon X
+                        </p>
                     </div>
-                    <img src='saturn.png' class='object-cover group-hover:hidden flex md:w-[40px] w-[30px]' />
-                    <img src='saturnb.png' class='object-cover group-hover:flex hidden md:w-[40px] w-[30px]' />
+                    <img src="saturn.png" class="object-cover group-hover:hidden flex md:w-[40px] w-[30px]" />
+                    <img src="saturnb.png" class="object-cover group-hover:flex hidden md:w-[40px] w-[30px]" />
                 </div>
-            </a>
-            <a href='https://github.com/Martins100-Tmd'
-                class='w-full flex gap-2 group flex-col items-center p-3 bg-[#0d0d0d] hover:bg-[#d4d4d4] duration-500 justify-between border border-[#1c1c1c] rounded-3xl'>
-                <img src='githubW.png' class='w-[40px] group-hover:hidden md:w-[50px] object-cover' />
-                <img src='githubB.png' class='w-[40px] md:w-[50px] hidden group-hover:flex object-cover' />
-                <div class='flex flex-row items-center w-full justify-between'>
-                    <div class='flex flex-col items-start'>
+            </div>
+            <div onclick="socialLinks('https://github.com/Martins100-Tmd')"
+                class="w-full flex gap-2 group flex-col items-center p-3 bg-[#0d0d0d] hover:bg-[#fff] duration-500 justify-between border border-[#1c1c1c] rounded-3xl">
+                <img src="githubW.png" class="w-[40px] group-hover:hidden md:w-[50px] object-cover" />
+                <img src="githubB.png" class="w-[40px] md:w-[50px] hidden group-hover:flex object-cover" />
+                <div class="flex flex-row items-center w-full justify-between">
+                    <div class="flex flex-col items-start">
                         <p
-                            class='text-[11px] md:text-sm text-white group-hover:text-black text-opacity-75 text-start font-orb'>
-                            Github
-                        </p>
-                        <p class='text-sm sm:text-lg text-white group-hover:text-black text-start font-orb font-black'>
-                            Martins100-Tmd
-                        </p>
+                            class="text-[13px] md:text-lg text-white group-hover:text-black text-opacity-75 text-start font-ice">
+                            Github</p>
+                        <p class="text-sm sm:text-lg text-white group-hover:text-black text-start font-ice font-black">
+                            Martins100-Tmd</p>
                     </div>
-                    <img src='saturn.png' class='object-cover group-hover:hidden flex md:w-[40px] w-[30px]' />
-                    <img src='saturnb.png' class='object-cover group-hover:flex hidden md:w-[40px] w-[30px]' />
+                    <img src="saturn.png" class="object-cover group-hover:hidden flex md:w-[40px] w-[30px]" />
+                    <img src="saturnb.png" class="object-cover group-hover:flex hidden md:w-[40px] w-[30px]" />
                 </div>
-            </a>
+            </div>
         </div>
-        <a href='https://wa.me/09061322407'
-            class='w-full flex gap-2 group flex-col items-center p-3 bg-[#0d0d0d] hover:bg-[#d4d4d4] duration-500 justify-between border border-[#1c1c1c] rounded-3xl'>
-            <div class='rounded-3xl border-2 border-[#4a4a4a] p-2.5 flex justify-center w-3/4 mx-auto'>
-                <img src='whatsappW.png' class='w-[40px] group-hover:hidden md:w-[50px] object-cover' />
-                <img src='whatsappB.png' class='w-[40px] md:w-[50px] hidden group-hover:flex object-cover' />
+        <div onclick="socialLinks(`https://wa.me/09061322407`)"
+            class="w-full flex gap-2 group flex-col items-center p-3 bg-[#0d0d0d] hover:bg-[#ffffff] duration-500 justify-between border border-[#1c1c1c] rounded-3xl">
+            <div class="rounded-3xl border-2 border-[#4a4a4a] p-2.5 flex justify-center w-3/4 mx-auto">
+                <img src="whatsappW.png" class="w-[40px] group-hover:hidden md:w-[50px] object-cover" />
+                <img src="whatsappB.png" class="w-[40px] md:w-[50px] hidden group-hover:flex object-cover" />
             </div>
-            <div class='flex flex-row items-center w-full justify-between'>
-                <div class='flex flex-col items-start'>
+            <div class="flex flex-row items-center w-full justify-between">
+                <div class="flex flex-col items-start">
                     <p
-                        class='text-[11px] md:text-xs text-white group-hover:text-black text-opacity-75 text-start font-orb'>
-                        Whatsapp
-                    </p>
+                        class="text-[13.5px] md:text-lg text-white group-hover:text-black text-opacity-75 text-start font-ice">
+                        Whatsapp</p>
                     <p
-                        class='text-sm md:text-base text-emerald-800 group-hover:text-black text-start font-orb font-black'>
-                        Chat me
-                        up
-                    </p>
+                        class="text-sm md:text-xl text-emerald-400 group-hover:text-black text-start font-ice font-black">
+                        Chat me up</p>
                 </div>
-                <img src='saturn.png' class='object-cover group-hover:hidden flex md:w-[40px] w-[30px]' />
-                <img src='saturnb.png' class='object-cover group-hover:flex hidden md:w-[40px] w-[30px]' />
+                <img src="saturn.png" class="object-cover group-hover:hidden flex md:w-[40px] w-[30px]" />
+                <img src="saturnb.png" class="object-cover group-hover:flex hidden md:w-[40px] w-[30px]" />
             </div>
-        </a>
+        </div>
     </section>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="./index.js"></script>
 </body>
 
-<footer class='w-full bg-[#0d0d0d] flex flex-col items-center justify-center border-t py-2 border-[#4a4a4a]'>
-    <p class='w-full flex justify-center font-orb font-semibold text-lg text-white'>@Martins Olumide</p>
+<footer class="w-full bg-[#0d0d0d] flex flex-col items-center justify-center border-t py-2 border-[#4a4a4a]">
+    <p class="w-full flex justify-center font-orb font-semibold text-lg text-white">@Martins Olumide</p>
 </footer>
 
 </html>
