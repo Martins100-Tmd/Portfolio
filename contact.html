@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Iceland&family=Orbitron" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" href="./output.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body class="bg-[#000]">
+    <header class="w-full p-3 bg-[#191919] md:bg-[#0d0d0d] border-b border-[#343434]">
+        <nav class="flex flex-row items-center justify-between gap-6">
+            <div class="flex flex-row items-center w-1/4 sm:w-1/5 md:w-1/4 self-center">
+                <img src="./MW.png" class="object-cover inline-flex w-[60px] sm:w-[70px] lg:w-[80px] mg" />
+                <div class="flex flex-col items-start self-start mt-0.5">
+                    <p class="font-ice font-medium text-xl sm:text-2xl lg:text-2xl text-start text-white self-start">
+                        artins</p>
+                    <p class="font-ice font-medium text-xl sm:text-2xl lg:text-2xl text-start text-white self-start">
+                        Olumide</p>
+                </div>
+            </div>
+            <ul class="w-auto hidden sm:flex flex-row items-center gap-3 md:gap-5 justify-between self-center"
+                id="menulist">
+                <li onclick="updateListCursor(event), reLocate('Index.html');" id="Index"
+                    class="cursor-pointer font-medium text-xl lg:text-2xl font-ice text-white">
+                    Home
+                </li>
+                <li onclick="updateListCursor(event),reLocate('portfolio.html');" id="portfolio"
+                    class="cursor-pointer font-medium text-xl lg:text-2xl font-ice text-white">
+                    Portfolio
+                </li>
+                <li onclick="updateListCursor(event),reLocate('about.html');" id="about"
+                    class="cursor-pointer font-medium text-xl lg:text-2xl font-ice text-white">
+                    About me
+                </li>
+                <li onclick="updateListCursor(event),reLocate('contact.html');" id="contact"
+                    class="cursor-pointer font-medium text-xl lg:text-2xl font-ice text-white">
+                    Contact me
+                </li>
+            </ul>
+            <div onclick="socialLinks(`https://wa.me/09061322407`)"
+                class="w-1/5 md:w-1/4 hidden sm:flex justify-end self-center">
+                <button
+                    class="sm:px-5 sm:py-2.5 py-2 rounded-lg shadow text-base lg:text-lg font-ice font-bold bg-emerald-400 w-4/5 md:w-1/2">
+                    Say Hi
+                </button>
+            </div>
+            <i class="material-icons sm:hidden flex text-4xl text-white">menu</i>
+        </nav>
+    </header>
+    <script src="index.js"></script>
+</body>
+<footer
+    class="w-full bg-[#191919] md:bg-[#0d0d0d] flex flex-col items-center justify-center border-t py-2 border-[#4a4a4a]">
+    <p class="w-full flex justify-center font-ice font-semibold text-xl text-white">@Martins Olumide</p>
+</footer>
+
+</html>

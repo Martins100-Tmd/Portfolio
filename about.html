@@ -2,7 +2,8 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rajdhani&family=Orbitron" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Iceland&family=Orbitron:wght@800&family=Kanit" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
     <link rel="stylesheet" href="./output.css" />
     <meta charset="UTF-8" />
@@ -11,51 +12,122 @@
 </head>
 
 <body class="bg-[#000]">
-    <header class="w-full p-3 bg-[#0d0d0d] border-b border-[#343434]">
+    <header class="w-full p-3 bg-[#191919] md:bg-[#0d0d0d] border-b border-[#343434]">
         <nav class="flex flex-row items-center justify-between gap-6">
             <div class="flex flex-row items-center w-1/4 sm:w-1/5 md:w-1/4 self-center">
                 <img src="./MW.png" class="object-cover inline-flex w-[60px] sm:w-[70px] lg:w-[80px] mg" />
-                <div class="flex flex-col items-start self-start">
-                    <p
-                        class="font-orb font-medium text-base sm:text-xl lg:text-2xl text-start text-white self-start mt-1">
+                <div class="flex flex-col items-start self-start mt-0.5">
+                    <p class="font-ice font-medium text-xl sm:text-2xl lg:text-2xl text-start text-white self-start">
                         artins</p>
-                    <p class="font-orb font-medium text-base sm:text-xl lg:text-2xl text-start text-white self-start">
+                    <p class="font-ice font-medium text-xl sm:text-2xl lg:text-2xl text-start text-white self-start">
                         Olumide</p>
                 </div>
             </div>
             <ul class="w-auto hidden sm:flex flex-row items-center gap-3 md:gap-5 justify-between self-center"
                 id="menulist">
-                <a href='./Index.html'>
-                    <li onclick="updateListCursor(event);" id='Index'
-                        class="cursor-pointer font-medium text-sm lg:text-lg font-orb text-white">Home</li>
-                </a>
-
-                <li onclick="updateListCursor(event);" id='portfolio'
-                    class="cursor-pointer font-medium text-sm lg:text-lg font-orb text-white">
+                <li onclick="updateListCursor(event), reLocate('Index.html');" id="Index"
+                    class="cursor-pointer font-medium text-xl lg:text-2xl font-ice text-white">
+                    Home
+                </li>
+                <li onclick="updateListCursor(event),reLocate('portfolio.html');" id="portfolio"
+                    class="cursor-pointer font-medium text-xl lg:text-2xl font-ice text-white">
                     Portfolio
                 </li>
-                <a href='./about.html'>
-                    <li onclick="updateListCursor(event);" id='about'
-                        class="cursor-pointer font-medium text-sm lg:text-lg font-orb text-white">
-                        About me
-                    </li>
-                </a>
-                <li onclick="updateListCursor(event);" id='contact'
-                    class="cursor-pointer font-medium text-sm lg:text-lg font-orb text-white">
+                <li onclick="updateListCursor(event),reLocate('about.html');" id="about"
+                    class="cursor-pointer font-medium text-xl lg:text-2xl font-ice text-white">
+                    About me
+                </li>
+                <li onclick="updateListCursor(event),reLocate('contact.html');" id="contact"
+                    class="cursor-pointer font-medium text-xl lg:text-2xl font-ice text-white">
                     Contact me
                 </li>
             </ul>
-            <div class="w-1/5 md:w-1/4 hidden sm:flex justify-end self-center">
+            <div onclick="socialLinks(`https://wa.me/09061322407`)"
+                class="w-1/5 md:w-1/4 hidden sm:flex justify-end self-center">
                 <button
-                    class="sm:px-5 sm:py-2.5 py-2 rounded-lg shadow text-xs lg:text-lg font-orb text-white bg-emerald-800 w-4/5 md:w-1/2">
+                    class="sm:px-5 sm:py-2.5 py-2 rounded-lg shadow text-base lg:text-lg font-ice font-bold bg-emerald-400 w-4/5 md:w-1/2">
                     Say Hi
                 </button>
             </div>
             <i class="material-icons sm:hidden flex text-4xl text-white">menu</i>
         </nav>
     </header>
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <section class="w-full flex flex-col lg:flex-row md:gap-7 gap-3 p-2 sm:py-7 md:px-12">
+        <div
+            class='w-[90%] sm:w-[45%] mx-auto lg:w-3/4 p-4 group h-[450px] md:min-h-[350px] self-stretch hover:bg-[#fff] bg-[#191919] md:bg-[#0d0d0d] border border-[#393939] md:border-[#1c1c1c] rounded-3xl flex justify-center'>
+            <img src='Me.jpg' class='w-full object-cover h-full object-center rounded-tr-3xl rounded-bl-3xl' />
+        </div>
+        <div class='flex flex-col items-start w-full md:gap-1 gap-3 justify-between'>
+            <div class='flex gap-3 lg:justify-between justify-center w-full flex-row items-center self-stretch'>
+                <img src='starW.png' class='object-cover self-center w-[30px]  md:w-[40px] lg:w-[50px]' alt='star' />
+                <p
+                    class='font-orb font-bold text-[3rem] md:text-[2rem] lg:text-[3.5rem] text-center w-auto lg:w-full text-white'>
+                    Meet
+                    Martins!
+                </p>
+                <img src='starW.png' class='object-cover self-center w-[30px] md:w-[40px] lg:w-[50px]' alt='star' />
+            </div>
+            <div
+                class='self-stretch w-full md:px-4 md:py-7 p-3 flex flex-col items-start bg-[#191919] md:bg-[#0d0d0d] border border-[#393939] md:border-[#1c1c1c] rounded-3xl justify-between'>
+                <img src="saturn.png" class="object-cover group-hover:hidden flex md:w-[40px] w-[30px]" />
+                <p class='font-kan font-thin text-lg leading-8 w-full text-stone-300 md:pt-6 pt-2'>
+                    A passionate visual/product designer dedicated to telling compelling stories through unique and
+                    creatively crafted
+                    designs. I create everything from social to print media designs to user interfaces for web and
+                    mobile, along with brand
+                    identity systems from the ground up. I also create appealing and fully functional websites for
+                    small-medium scale
+                    businesses. I can visualize your ideas and give your brand a distinct voice and an outstanding
+                    visual presence.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class='w-full flex flex-col md:flex-row md:gap-7 gap-3 p-2 sm:py-7 md:px-12'>
+        <div
+            class='flex flex-col items-start gap-3 w-full p-3 bg-[#191919] md:bg-[#0d0d0d] border border-[#393939] md:border-[#1c1c1c] rounded-3xl justify-center'>
+            <p class='font-orb font-semibold text-xl text-white'>Experience</p>
+            <div class='flex flex-col items-start w-full'>
+                <p class='font-ice text-stone-300'>2022 - 2023</p>
+                <p class='font-orb text-white font-semibold text-xl text-start w-full'>Fullstack Developer</p>
+                <p class='font-ice font-thin text-stone-300'>Evelyn Stitches NG</p>
+            </div>
+            <div class='flex flex-col items-start w-full'>
+                <p class='font-ice text-stone-300'>Oct, 2024 - Nov, 2024</p>
+                <p class='font-orb text-white font-semibold text-xl text-start w-full'>Frontend Developer</p>
+                <p class='font-ice font-thin text-stone-300'>Style IT NG</p>
+            </div>
+            <div class='flex flex-col items-start w-full'>
+                <p class='font-ice text-stone-300'>2022 - 2023</p>
+                <p class='font-orb text-white font-semibold text-xl text-start w-full'>Frontend Developer</p>
+                <p class='font-ice font-thin text-stone-300'>Evelyn Stitches NG</p>
+            </div>
+        </div>
+        <div
+            class='flex flex-col items-start gap-3 w-full p-3 bg-[#191919] md:bg-[#0d0d0d] border border-[#393939] md:border-[#1c1c1c] rounded-3xl justify-center'>
+            <p class='font-orb font-semibold text-xl text-white'>Experience</p>
+            <div class='flex flex-col items-start w-full'>
+                <p class='font-ice text-stone-300'>2022 - 2023</p>
+                <p class='font-orb text-white font-semibold text-xl text-start w-full'>Fullstack Developer</p>
+                <p class='font-ice font-thin text-stone-300'>Evelyn Stitches NG</p>
+            </div>
+            <div class='flex flex-col items-start w-full'>
+                <p class='font-ice text-stone-300'>Oct, 2024 - Nov, 2024</p>
+                <p class='font-orb text-white font-semibold text-xl text-start w-full'>Frontend Developer</p>
+                <p class='font-ice font-thin text-stone-300'>Style IT NG</p>
+            </div>
+            <div class='flex flex-col items-start w-full'>
+                <p class='font-ice text-stone-300'>2022 - 2023</p>
+                <p class='font-orb text-white font-semibold text-xl text-start w-full'>Frontend Developer</p>
+                <p class='font-ice font-thin text-stone-300'>Evelyn Stitches NG</p>
+            </div>
+        </div>
+    </section>
     <script src="./index.js"></script>
 </body>
+<footer
+    class="w-full bg-[#191919] md:bg-[#0d0d0d] flex flex-col items-center justify-center border-t py-2 border-[#4a4a4a]">
+    <p class="w-full flex justify-center font-ice font-semibold text-xl text-white">@Martins Olumide</p>
+</footer>
 
 </html>

@@ -6,6 +6,7 @@ module.exports = {
          fontFamily: {
             orb: ['Orbitron'],
             ice: ['Iceland'],
+            kan: ['Kanit'],
          },
       },
    },
